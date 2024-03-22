@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetHome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PetHome -Cadastro de Pets</h1>
+  </header>
+
+  <main>
+    <h2>Cadastre o seu Pet</h2>
+    <form id="formCadastro">
+      <label for="nomeAnimal">Nome do Animal:</label>
+      <input type="text" id="nomeAnimal" required>
+
+      <label for="nomeTutor">Nome do Tutor:</label>
+      <input type="text" id="nomeTutor" required>
+
+      <label for="contato">Contato:</label>
+      <input type="text" id="contato" required>
+
+      <label for="diarias">Quantidade de Diárias:</label>
+      <input type="number" id="diarias" required>
+
+      <label for="especie">Espécie:</label>
+      <select id="especie" required>
+        <option value="">Selecione...</option>
+        <option value="cachorro">Cachorro</option>
+        <option value="gato">Gato</option>
+      </select>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </main>
+  <ul id="listaPets"></ul>
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
